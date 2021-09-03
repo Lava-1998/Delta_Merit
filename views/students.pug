@@ -1,0 +1,20 @@
+doctype html
+html
+   head
+      title 
+   body
+      center
+      h1(style="color:red") Student List
+      table(border="2" cellpadding="10")
+        thead 
+            th Name 
+              button sort
+            th Email 
+               button sort
+            th Number 
+                button sort 
+        each val in allstudents 
+            tr 
+                td #{val.name}
+                td #{val.email}
+                td #{val.mobile}
